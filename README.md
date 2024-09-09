@@ -15,3 +15,5 @@ And let’s allow the user to decide just how tall the pyramids should be by fir
 
 Examples
 Notice that width of the “gap” between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids’ heights.
+
+Code for CS50.h comes from https://github.com/cs50/libcs50
