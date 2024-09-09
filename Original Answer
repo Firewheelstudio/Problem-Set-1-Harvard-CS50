@@ -1,0 +1,78 @@
+#include <cs50.h>
+#include <stdio.h>
+/* 
+This was my original attempt to solve the question asked on how do you make those little double hills for the Mario game using ASCII code? 
+This answer is kinda silly because it's a minimal viable product. Not really how I would like to forever answer the question but it worked. 
+Once you see the progression of the final answer you'll understand what I mean by it's not really that pretty, but it solves the question. 
+*/
+
+
+int main(void)
+{
+    int pyramidheight = 0;
+
+    while (pyramidheight < 1 || pyramidheight > 8)
+    {
+        pyramidheight = get_int("What's your pyramid height?\n");
+    }
+    if (pyramidheight == 1)
+    {
+        printf("#  #\n");
+    }
+    else if (pyramidheight == 2)
+    {
+        printf(" #  #\n");
+        printf("##  ##\n");
+    }
+    else if (pyramidheight == 3)
+    {
+        printf("  #  #\n");
+        printf(" ##  ##\n");
+        printf("###  ###\n");
+    }
+    else if (pyramidheight == 4)
+    {
+        printf("   #  #\n");
+        printf("  ##  ##\n");
+        printf(" ###  ###\n");
+        printf("####  ####\n");
+    }
+    else if (pyramidheight == 5)
+    {
+        printf("    #  #\n");
+        printf("   ##  ##\n");
+        printf("  ###  ###\n");
+        printf(" ####  ####\n");
+        printf("#####  #####\n");
+    }
+    else if (pyramidheight == 6)
+    {
+        printf("     #  #\n");
+        printf("    ##  ##\n");
+        printf("   ###  ###\n");
+        printf("  ####  ####\n");
+        printf(" #####  #####\n");
+        printf("######  ######\n");
+    }
+    else if (pyramidheight == 7)
+    {
+        printf("      #  #\n");
+        printf("     ##  ##\n");
+        printf("    ###  ###\n");
+        printf("   ####  ####\n");
+        printf("  #####  #####\n");
+        printf(" ######  ######\n");
+        printf("#######  #######\n");
+    }
+    else if (pyramidheight == 8)
+    {
+        printf("       #  #\n");
+        printf("      ##  ##\n");
+        printf("     ###  ###\n");
+        printf("    ####  ####\n");
+        printf("   #####  #####\n");
+        printf("  ######  ######\n");
+        printf(" #######  #######\n");
+        printf("########  ########\n");
+    }
+}
